@@ -27,7 +27,7 @@
       </a>
 
       <!-- Collapse -->
-      <button class="navbar-toggler .smooth-scroll" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
         aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -390,7 +390,7 @@
             <!--Fourth row-->
             <div class="row">
               <div class="col-2">
-                <i class="fa fa-linux fa-2x indigo-text"></i>
+                <i class="fa fa-check-circle fa-2x indigo-text"></i>
               </div>
               <div class="col-10">
                 <h6 class="feature-title">Rasberry Pi</h6>
@@ -480,9 +480,13 @@
   <div class="row features-small mb-5 mt-3 wow fadeIn text-center">
     <div class="col-12">
       <i class="fa fa-address-book fa-2x blue-text"></i>
-      <p class="grey-text">hydronekit@gmail.com</p>
       <div style="height:15px"></div>
-      </div>
+      <p class="grey-text">
+        <a href="mailto:hydronekit@gmail.com?Subject=Hi, I'd like to buy all of your drones please." target="_top">
+          hydronekit@gmail.com
+        </a>
+      </p>
+    </div>
   </div>
   <!--/First row-->
 
@@ -542,6 +546,11 @@
   <script type="text/javascript">
     // Animations initialization
     new WOW().init();
+    $("#button").click(function () {
+        $('html, body').animate({
+          scrollTop: $("#myDiv").offset().top
+        }, 2000);
+      });
   </script>
 </body>
 

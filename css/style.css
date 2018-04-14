@@ -35,5 +35,21 @@ body,
   .view video {
     position: relative;
     display: block;
+    background-size: cover;
     max-width: 100%;
     max-height: 100%;
+  }
+
+  /* Media Query for mobile images Carousel */
+  @media (max-width: 775px) {
+  html,
+  body,
+  .view {
+  height: 100%; 
+  }
+
+    .view img,
+    .view video {
+      max-width: none;
+    }
+}
