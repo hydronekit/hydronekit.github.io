@@ -40,6 +40,7 @@ body,
     max-height: 100%;
   }
 
+
   /* Media Query for mobile images Carousel */
   @media (max-width: 775px) {
   html,

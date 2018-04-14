@@ -22,7 +22,7 @@
     <div class="container">
 
       <!-- Brand -->
-      <a class="navbar-brand" href="#test1">
+      <a class="navbar-brand" id="button1" href="#">
         <img src="img/logo.png" height="31vh" width="31vh">
       </a>
 
@@ -43,16 +43,16 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link .smooth-scroll" href="#test1">About SSUE</a>
+            <a class="nav-link" id="button2" href="#">About SSUE</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#" target="_blank">Product</a>
+            <a class="nav-link" href="product.html" target="_blank">Product</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#" target="_blank">Contact</a>
+            <a class="nav-link" id="button3" href="#" >Contact</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#" target="_blank">Careers</a>
+            <a class="nav-link" href="careers.html" target="_blank">Careers</a>
           </li>
         </ul>
 
@@ -86,7 +86,7 @@
   <div id="carousel-example-1z" class="carousel slide carousel-fade" data-ride="carousel">
 
     <!--Indicators-->
-    <ol class="carousel-indicators">
+    <ol id="about" class="carousel-indicators">
       <li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
       <li data-target="#carousel-example-1z" data-slide-to="1"></li>
       <li data-target="#carousel-example-1z" data-slide-to="2"></li>
@@ -228,7 +228,7 @@
           <div class="col-md-6 mb-4">
 
             <!-- Main heading -->
-            <h3 class="h3 mb-3" id="test1">We are the Secret Society of Unsuccessful Engineers (SSUE)</h3>
+            <h3 class="h3 mb-3">We are the Secret Society of Unsuccessful Engineers (SSUE)</h3>
             <p>USF Chemical Engineering Seniors creating innovative solutions under our new alias:
               <strong>SSUE</strong> or Secret Society of Unsuccessful Engineers.</p>
             <p>Read details below to learn more about our product the hydronekit.</p>
@@ -430,8 +430,8 @@
                 <i class="fa fa-check-circle fa-2x indigo-text"></i>
               </div>
               <div class="col-10">
-                <h6 class="feature-title">Plenty of useful templates</h6>
-                <p class="grey-text">Need inspiration? Use one of our predefined templates for free.</p>
+                <h6 class="feature-title">Educational</h6>
+                <p class="grey-text">Learning is part of the process. Fun is a gurantee.</p>
                 <div style="height:15px"></div>
               </div>
             </div>
@@ -473,7 +473,7 @@
       <!--Section: Not enough-->
 
       <!--Contact!-->
-<section>
+<section id="contact">
 <hr class="my-5">
   <h2 class="my-5 h3 text-center">Contact Us!</h2>
   <!--First row-->
@@ -482,7 +482,10 @@
       <i class="fa fa-address-book fa-2x blue-text"></i>
       <div style="height:15px"></div>
       <p class="grey-text">
-        <a href="mailto:hydronekit@gmail.com?Subject=Hi, I'd like to buy all of your drones please." target="_top">
+        <a href="mailto:hydronekit@gmail.com?Subject=I'd like to buy all of your drones please.&body=Hello Hy-Drone-Kit,
+                %0A%0AYour drones are the best and I would very much like all of them.
+                %0A%0ASincerely,
+                 %0A- A [NAME] with great taste in drones" target="_blank">
           hydronekit@gmail.com
         </a>
       </p>
@@ -546,11 +549,26 @@
   <script type="text/javascript">
     // Animations initialization
     new WOW().init();
-    $("#button").click(function () {
+
+    // Scroll Funtionality for navbar
+    $("#button1").click(function () {
         $('html, body').animate({
-          scrollTop: $("#myDiv").offset().top
+          scrollTop: $("#about").offset().top
         }, 2000);
       });
+
+      $("#button2").click(function () {
+          $('html, body').animate({
+            scrollTop: $("#about").offset().top
+          }, 2000);
+        });
+
+      $("#button3").click(function () {
+        $('html, body').animate({
+          scrollTop: $("#contact").offset().top
+        }, 2000);
+      });
+
   </script>
 </body>
 
