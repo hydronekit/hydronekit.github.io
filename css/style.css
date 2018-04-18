@@ -40,6 +40,11 @@ body,
     max-height: 100%;
   }
 
+  /* This is for the control icons */
+.carousel .carousel-control-next-icon,
+.carousel .carousel-control-prev-icon {
+  background-color: rgba(0, 0, 0, 0.3);
+}
 
   /* Media Query for mobile images Carousel */
   @media (max-width: 775px) {
